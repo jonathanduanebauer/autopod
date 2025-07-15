@@ -26,4 +26,23 @@ A Flask-based web dashboard for managing and summarizing radio and podcast conte
 - **Logging**: Rotating file logging to `app.log`
 
 ## Folder Structure
+/home/ftpuser/
+├── autobahn/
+│ ├── processing/ # Input folder for transcripts and MP3s
+│ ├── completed/ # Output folder for summaries
+├── flask/
+│ ├── templates/
+│ │ ├── index.html
+│ │ ├── newstalk_breakfast.html
+│ │ ├── pat_kenny.html
+│ │ ├── lunchtime_live.html
+│ │ └── images/ # Uploaded images for episodes
+
+
+## Setup Instructions
+
+### 1. Install Requirements
+
+```bash
+pip install flask flask_httpauth flask_cors openai psycopg2-binary
 
