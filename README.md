@@ -47,3 +47,18 @@ A Flask-based web dashboard for managing and summarizing radio and podcast conte
 pip install flask flask_httpauth flask_cors openai psycopg2-binary
 
 
+CREATE TABLE summaries (
+    id SERIAL PRIMARY KEY,
+    filename TEXT,
+    headline TEXT,
+    summary TEXT,
+    keywords TEXT,
+    mp3_filename TEXT,
+    image_filename TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
+
+openai.api_key = "your-openai-key"
+SMTP2GO_API_KEY = "your-smtp2go-key"
+Username: admin
+Password: Marconi*2024
